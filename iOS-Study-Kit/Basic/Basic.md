@@ -19,3 +19,81 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
+## - Properties / Variable Declaration
+
+#### Type of property/variable declarations:
+##### 1. Basic stored property
+`let message = "Hello World"`
+
+##### 2. Closure-based stored property
+- Closure is executed immediately during the instantiation procees of the object
+```swift
+let label: UILabel = {
+    let label = UILabel()
+    label.text = "This is a label"
+    return label
+}()
+```
+
+##### 3. Lazy stored property
+- Must be declared using `var` instead of `let`
+- Will be instantiated when property is called. Great for property that require complex computation which don't need to be performed until it's needed
+```swift
+class ComplexClass {
+    //Just for demo purpose. Imagine this is a complex class to instantiate
+}
+
+//Basic lazy stored property declaration
+lazy var complexClass = ComplexClass()
+```
+
+```swift
+//Closure-based lazy stored property declaration
+lazy var longString: String = {
+    var string = ""
+    for i in 0...1000 {
+        string.append(String(i))
+    }
+    return string
+}()
+```
+
+##### 4. Computed Property
+- Must be declared using `var` instead of `let`
+- Must have explicit type
+- Return new instance every time variable is called
+
+**There are two types of computed property:**
+- Computed property with getter and setter
+- Read-only computed property
+ 
+```swift
+struct Person {
+    var name = "Bob"
+    var sex = "M"
+    var greeting = "Hello"
+    
+    //Computed property with getter and setter
+    var greetingSentence: String {
+        set(newGreeting) {
+            greeting = newGreeting
+        }
+        get {
+            return "\(greeting), \(name)"
+        }
+    }
+    
+    //Read-only computed property
+    //Can't be modified
+    var pronoun: String {
+        return sex == "F" ? "She" : sex == "M" ? "He" : "Unknown"
+    }
+}
+```
+
+Reference:
+- https://www.avanderlee.com/swift/lazy-var-property/
+- https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#
+- https://stackoverflow.com/questions/28792014/property-with-return-or-return
+- https://stackoverflow.com/questions/59381521/how-to-change-the-text-attribute-of-a-uilabel-in-swift
+- https://stackoverflow.com/questions/39635681/what-is-the-difference-between-the-following-3-declarations
