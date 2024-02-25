@@ -97,3 +97,32 @@ Reference:
 - https://stackoverflow.com/questions/28792014/property-with-return-or-return
 - https://stackoverflow.com/questions/59381521/how-to-change-the-text-attribute-of-a-uilabel-in-swift
 - https://stackoverflow.com/questions/39635681/what-is-the-difference-between-the-following-3-declarations
+
+
+## - Setup views with AutoLayout
+
+#### Steps:
+1. Set `translatesAutoresizingMaskIntoConstraints` property of the view to `false`
+```swift
+lazy var label: UILabel = {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false //This one
+    label.text = "Hello World"
+    
+    return label
+}()
+```
+
+2. Add the view to the superview 
+```swift
+view.addSubview(label)
+```
+
+3. Setup constraint(s) of the view
+```swift
+NSLayoutConstraint.activate([
+    label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+    label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+    //Insert other view's constraint(s) if any
+])
+```

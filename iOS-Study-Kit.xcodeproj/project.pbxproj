@@ -12,6 +12,7 @@
 		E9505D112B87939B003118F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9505D102B87939B003118F9 /* ViewController.swift */; };
 		E9505D162B87939C003118F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9505D152B87939C003118F9 /* Assets.xcassets */; };
 		E9505D192B87939C003118F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9505D172B87939C003118F9 /* LaunchScreen.storyboard */; };
+		E967345A2B8B25BE004121C1 /* AutoLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96734592B8B25BE004121C1 /* AutoLayoutVC.swift */; };
 		E988B6AC2B88900100E26FB4 /* VarDeclarationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988B6AB2B88900100E26FB4 /* VarDeclarationVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		E9505D182B87939C003118F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9505D1A2B87939C003118F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9505D242B87AB03003118F9 /* Basic.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Basic.md; sourceTree = "<group>"; };
+		E96734592B8B25BE004121C1 /* AutoLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutVC.swift; sourceTree = "<group>"; };
 		E988B6AB2B88900100E26FB4 /* VarDeclarationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarDeclarationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			children = (
 				E9505D242B87AB03003118F9 /* Basic.md */,
 				E988B6AB2B88900100E26FB4 /* VarDeclarationVC.swift */,
+				E96734592B8B25BE004121C1 /* AutoLayoutVC.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				E9505D112B87939B003118F9 /* ViewController.swift in Sources */,
 				E988B6AC2B88900100E26FB4 /* VarDeclarationVC.swift in Sources */,
 				E9505D0D2B87939B003118F9 /* AppDelegate.swift in Sources */,
+				E967345A2B8B25BE004121C1 /* AutoLayoutVC.swift in Sources */,
 				E9505D0F2B87939B003118F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
