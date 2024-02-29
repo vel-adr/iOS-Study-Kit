@@ -15,6 +15,7 @@
 		E967345A2B8B25BE004121C1 /* AutoLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96734592B8B25BE004121C1 /* AutoLayoutVC.swift */; };
 		E96734602B8CAE3C004121C1 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967345F2B8CAE3C004121C1 /* FirstVC.swift */; };
 		E988B6AC2B88900100E26FB4 /* VarDeclarationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988B6AB2B88900100E26FB4 /* VarDeclarationVC.swift */; };
+		E9B38ED32B90C10B008490E8 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B38ED22B90C10B008490E8 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E967345F2B8CAE3C004121C1 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		E96734632B8E303A004121C1 /* Navigation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Navigation.md; sourceTree = "<group>"; };
 		E988B6AB2B88900100E26FB4 /* VarDeclarationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarDeclarationVC.swift; sourceTree = "<group>"; };
+		E9B38ED22B90C10B008490E8 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				E967345F2B8CAE3C004121C1 /* FirstVC.swift */,
 				E96734632B8E303A004121C1 /* Navigation.md */,
+				E9B38ED22B90C10B008490E8 /* SecondVC.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				E9505D112B87939B003118F9 /* ViewController.swift in Sources */,
 				E988B6AC2B88900100E26FB4 /* VarDeclarationVC.swift in Sources */,
+				E9B38ED32B90C10B008490E8 /* SecondVC.swift in Sources */,
 				E96734602B8CAE3C004121C1 /* FirstVC.swift in Sources */,
 				E9505D0D2B87939B003118F9 /* AppDelegate.swift in Sources */,
 				E967345A2B8B25BE004121C1 /* AutoLayoutVC.swift in Sources */,
