@@ -22,6 +22,7 @@ class FirstVC: UIViewController {
     @objc func didTapButton() {
         //- Normal push to another VC
         let destination = SecondVC()
+        destination.parentVC = self
         self.navigationController?.pushViewController(destination, animated: true)
         
         //- Push same type of VC, different instance to the stack.

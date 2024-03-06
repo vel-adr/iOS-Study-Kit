@@ -130,3 +130,26 @@ Additional Notes:
     
 Reference:
 https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621887-pushviewcontroller
+
+
+## - Pop View Controller
+Just like pop operation, pop view controller in navigation will remove viewController(s) from the navigation stack. There are 3 types of popViewController operation in UIKit:
+
+1. Standard popViewController
+```swift
+func popViewController(animated: Bool)
+```
+Remove the `topViewController` of the navigationController.
+
+2. Pop to rootViewController
+```swift
+func popToRootViewController(animated: Bool)
+```
+Remove all the viewController(s) in the stack, EXCEPT the `rootViewController` a.k.a the first viewController added to the stack.
+
+3. Pop to a specific viewController
+```swift
+func popToViewController(_: UIViewController, animated: Bool)
+```
+Remove all viewController(s) until the specified `viewController` becomes the `topViewController` of the navigationController.
+IMPORTANT: You need to have the reference to the specific viewController to use this function, cannot use a new instance of the viewController even if it is the same type. Can see the example in `SecondVC.swift`
